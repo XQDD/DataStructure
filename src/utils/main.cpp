@@ -1,21 +1,24 @@
+#pragma once
+
 #include <iostream>
-#include <memory>
-#include <vector>
-#include <algorithm>
-#include <vector>
-#include <queue>
 #include <iterator>
-#include <list>
-#include <functional>
-#include <numeric>
-#include <cmath>
 #include <valarray>
-#include <ostream>
 
-void println() {
+using namespace std;
 
+
+template<typename T>
+void print(valarray<T> arr, char *delimit = " ") {
+    copy(begin(arr), end(arr), ostream_iterator<T>(cout, delimit));
 }
 
-void print() {
+template<typename T>
+void println(valarray<T> arr) {
+    print(arr, "\n");
+}
 
+template<typename T>
+ostream &operator<<(ostream &out, valarray<T> arr) {
+    print(arr);
+    return out;
 }
