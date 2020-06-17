@@ -7,14 +7,14 @@ using namespace std;
 
 //P26 1.1 起泡排序法
 void bubbleSort1A(valarray<int> &a) {
-    bool sored = false;
+    bool sorted = false;
     auto size = a.size();
-    while (!sored) {
-        sored = true;
+    while (!sorted) {
+        sorted = true;
         for (int j = 0; j < size - 1; ++j) {
             if (a[j] > a[j + 1]) {
                 swap(a[j], a[j + 1]);
-                sored = false;
+                sorted = false;
             }
         }
         //此时最后的那位已经是最大的了

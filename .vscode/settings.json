@@ -1,0 +1,9 @@
+{
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "files.associations": {
+        "iterator": "cpp",
+        "bitset": "cpp",
+        "ostream": "cpp",
+        "valarray": "cpp"
+    }
+}

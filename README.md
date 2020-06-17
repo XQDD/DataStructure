@@ -1,7 +1,7 @@
-# data-structure
+# Data Structures and Algorithms in C++ (4th Edition) Edit edition
 
 book
-> <https://book.douban.com/subject/25859528/>
+> <https://book.douban.com/subject/26674051/>
 
-video
-> <https://www.xuetangx.com/course/THU08091000384/1516243?fromArray=learn_title>
+solution manual
+> <https://www.chegg.com/homework-help/data-structures-and-algorithms-in-c-4th-edition-solutions-9781285415017>
