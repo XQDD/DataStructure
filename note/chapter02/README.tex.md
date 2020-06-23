@@ -1,13 +1,12 @@
 # 第2章
 
-[TOC]
-
 ## 1. 大$O$表示法
 
 ### 定义1
 
 如果**存在**正数$c$和$N$，对所有的$n{\ge}{N}$，有$f(n){\le}cg(n)$，则$f(n)=O(g(n))$
-> 把$cg(n)放到不等式右边易于理解，即此函数为原函数的上界$
+
+> 把$cg(n)$放到不等式右边易于理解，即此函数为原函数的上界
 
 #### 性质
 
@@ -29,8 +28,8 @@ $an^k=O(n^k)$
 
 - 令$c=N=1$，该性质成立
 
-> 结合性质2,3,4可以退出，任何多项式都是该多项式中次数最高的项的大O表示，即  
-> $f(n)=a_kn^k+a_{k-1}n^{k-1}+...+a_1n+a_0=O(n^k)$
+> 结合性质2,3,4可以推出，任何多项式都是该多项式中次数最高的项的大O表示，即  
+> $$f(n)=a_kn^k+a_{k-1}n^{k-1}+...+a_1n+a_0=O(n^k)$$
 
 ##### 性质5
 
@@ -49,7 +48,8 @@ $an^k=O(n^k)$
 ### 定义2
 
 若存在正数$c$和$N$，对于所有的$n{\ge}N$，有$f(n){\ge}cg(n)$，则$f(n)=\Omega(g(n))$
-> 把$cg(n)放到不等式右边易于理解，即此函数为原函数的下界$
+
+> 把$cg(n)$放到不等式右边易于理解，即此函数为原函数的下界
 
 ### 定义3
 
@@ -58,54 +58,3 @@ $an^k=O(n^k)$
 ## 3. 平均复杂度
 
 $C_{avg}=\sum_ip(input_t)steps(input_i)$
-
-
-```latex {cmd:true}
-\documentclass[11pt]{minimal}
-\usepackage{tikz}
-\usepackage{verbatim}
-\usepackage[active,tightpage]{preview}
-\PreviewEnvironment{tikzpicture}
-\usetikzlibrary{trees}
-\begin{document}
-	\begin{tikzpicture}
-	[thick,scale=1, every node/.style={scale=2}]
-	\node {root}
-	child {node {1}
-		child {node {2}
-			child {node {3}}
-		}
-		child [missing] {}
-		child {node {3}
-			child {node {2}}
-		}
-	}	
-	child [missing] {}	
-	child [missing] {}
-	child [missing] {}	
-	child [missing] {}	
-	child { node {2}
-		child {node {1}
-			child {node {3}}
-		}
-		child [missing] {}
-		child {node {3}
-			child {node {1}}
-		}
-	}	
-	child [missing] {}	
-	child [missing] {}
-	child [missing] {}	
-	child [missing] {}	
-	child { node {3}
-		child {node {1}
-			child {node {2}}
-		}
-		child [missing] {}
-		child {node {2}
-			child {node {1}}
-		}
-	};
-	\end{tikzpicture}
-\end{document}
-```
