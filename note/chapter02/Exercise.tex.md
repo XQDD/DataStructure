@@ -225,14 +225,16 @@ $\frac{1+2+..+(n-2)}{4(n-2)}+\frac{n-1}{4}+\frac{n}{2}=\frac{7n-3}{8}$
 ## 13
 
 **不太明白*
-但是其实就是把
+
+但其实就是把
+
 $a{\land}b$改写成这种$(a{\lor}b{\lor}c)\land(a{\lor}b{\lor\lnot}c)$类型
-$a=
-(a{\lor}b{\lor}c{\lor}d)
-{\land}
-(a{\lor\lnot}b{\lor}c{\lor}d)
-{\land}
-(a{\lor}b{\lor\lnot}c{\lor}d)
-{\land}
-(a{\lor}b{\lor}c{\lor\lnot}d)
-$
+
+$a=$
+$(a{\lor}b{\lor}c{\lor}d)$
+${\land}$
+$(a{\lor\lnot}b{\lor}c{\lor}d)$
+${\land}$
+$(a{\lor}b{\lor\lnot}c{\lor}d)$
+${\land}$
+$(a{\lor}b{\lor}c{\lor\lnot}d)$
