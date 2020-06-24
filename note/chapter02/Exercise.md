@@ -225,6 +225,16 @@ false，当<img src="/note/chapter02/tex/776a2eb33ee5f162e3a01dcc9183d312.svg?in
 ## 13
 
 **不太明白*
-但是其实就是把
+
+但其实就是把
+
 <img src="/note/chapter02/tex/fdf103bfa954b4d7742fdd6ff4c0dd85.svg?invert_in_darkmode&sanitize=true" align=middle width=26.70288884999999pt height=22.831056599999986pt/>改写成这种<img src="/note/chapter02/tex/be9f33a3fa83896466d0581c7ae7fdd7.svg?invert_in_darkmode&sanitize=true" align=middle width=144.34576199999998pt height=24.65753399999998pt/>类型
-<img src="/note/chapter02/tex/9a8a019d050b53ba004fa20fe45706cc.svg?invert_in_darkmode&sanitize=true" align=middle width=404.6642688pt height=24.65753399999998pt/>
+
+<img src="/note/chapter02/tex/251bad4ef213b51aea2e3496718f4481.svg?invert_in_darkmode&sanitize=true" align=middle width=26.04068609999999pt height=14.15524440000002pt/>
+<img src="/note/chapter02/tex/c931610a2b6b549efc2dfa458d531db9.svg?invert_in_darkmode&sanitize=true" align=middle width=77.07596489999999pt height=24.65753399999998pt/>
+<img src="/note/chapter02/tex/2025e0f16b9f14d20c22dad9af98a2d7.svg?invert_in_darkmode&sanitize=true" align=middle width=10.95894029999999pt height=18.264896099999987pt/>
+<img src="/note/chapter02/tex/68183fb115c4033e75d97e27982fd5d1.svg?invert_in_darkmode&sanitize=true" align=middle width=88.03490189999998pt height=24.65753399999998pt/>
+<img src="/note/chapter02/tex/2025e0f16b9f14d20c22dad9af98a2d7.svg?invert_in_darkmode&sanitize=true" align=middle width=10.95894029999999pt height=18.264896099999987pt/>
+<img src="/note/chapter02/tex/c90bcc3e31b16a1a19e31e7070df0a00.svg?invert_in_darkmode&sanitize=true" align=middle width=88.03490189999998pt height=24.65753399999998pt/>
+<img src="/note/chapter02/tex/2025e0f16b9f14d20c22dad9af98a2d7.svg?invert_in_darkmode&sanitize=true" align=middle width=10.95894029999999pt height=18.264896099999987pt/>
+<img src="/note/chapter02/tex/c719b522cbb40c4ce0b07165b5168775.svg?invert_in_darkmode&sanitize=true" align=middle width=88.03490189999998pt height=24.65753399999998pt/>
