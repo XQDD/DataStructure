@@ -1,5 +1,21 @@
 # 第2章
 
+- [第2章](#第2章)
+  - [1. 大<img src="/note/chapter02/tex/9afe6a256a9817c76b579e6f5db9a578.svg?invert_in_darkmode&sanitize=true" align=middle width=12.99542474999999pt height=22.465723500000017pt/>表示法](#1-大math-xmlnshttpwwww3org1998mathmathmlsemanticsmrowmiomimrowannotation-encodingapplicationx-texoannotationsemanticsmatho表示法)
+    - [定义1](#定义1)
+      - [性质](#性质)
+        - [性质1](#性质1)
+        - [性质2](#性质2)
+        - [性质3](#性质3)
+        - [性质4](#性质4)
+        - [性质5](#性质5)
+        - [性质6](#性质6)
+        - [性质7](#性质7)
+  - [2. <img src="/note/chapter02/tex/9432d83304c1eb0dcb05f092d30a767f.svg?invert_in_darkmode&sanitize=true" align=middle width=11.87217899999999pt height=22.465723500000017pt/>表示法与<img src="/note/chapter02/tex/b35e24d8a08c0ab01195f2ad2a78fab7.svg?invert_in_darkmode&sanitize=true" align=middle width=12.785434199999989pt height=22.465723500000017pt/>表示法](#2-math-xmlnshttpwwww3org1998mathmathmlsemanticsmrowmi-mathvariantnormalωmimrowannotation-encodingapplicationx-texomegaannotationsemanticsmathω表示法与math-xmlnshttpwwww3org1998mathmathmlsemanticsmrowmi-mathvariantnormalθmimrowannotation-encodingapplicationx-texthetaannotationsemanticsmathθ表示法)
+    - [定义2](#定义2)
+    - [定义3](#定义3)
+  - [3. 平均复杂度](#3-平均复杂度)
+
 ## 1. 大<img src="/note/chapter02/tex/9afe6a256a9817c76b579e6f5db9a578.svg?invert_in_darkmode&sanitize=true" align=middle width=12.99542474999999pt height=22.465723500000017pt/>表示法
 
 ### 定义1
@@ -29,7 +45,7 @@
 - 令<img src="/note/chapter02/tex/652ade93278342a32b998d20c489ec50.svg?invert_in_darkmode&sanitize=true" align=middle width=74.16824414999999pt height=22.465723500000017pt/>，该性质成立
 
 > 结合性质2,3,4可以推出，任何多项式都是该多项式中次数最高的项的大O表示，即  
-> <p align="center"><img src="/note/chapter02/tex/e2bab084ef658513dac210f787b0faee.svg?invert_in_darkmode&sanitize=true" align=middle width=359.2151211pt height=18.88772655pt/></p>
+> <img src="/note/chapter02/tex/6ddb7efa335d3f494d031e9d466c84d8.svg?invert_in_darkmode&sanitize=true" align=middle width=359.21512110000003pt height=27.91243950000002pt/>
 
 ##### 性质5
 
@@ -58,4 +74,3 @@
 ## 3. 平均复杂度
 
 <img src="/note/chapter02/tex/a5cdcfbdbfed7cbadb257cc740d481c3.svg?invert_in_darkmode&sanitize=true" align=middle width=241.66484595pt height=24.657735299999988pt/>
-
