@@ -5,4 +5,3 @@ book
 
 solution manual
 > <https://www.chegg.com/homework-help/data-structures-and-algorithms-in-c-4th-edition-solutions-9781285415017>
-
