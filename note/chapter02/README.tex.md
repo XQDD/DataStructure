@@ -1,5 +1,21 @@
 # 第2章
 
+- [第2章](#第2章)
+  - [1. 大$O$表示法](#1-大math-xmlnshttpwwww3org1998mathmathmlsemanticsmrowmiomimrowannotation-encodingapplicationx-texoannotationsemanticsmatho表示法)
+    - [定义1](#定义1)
+      - [性质](#性质)
+        - [性质1](#性质1)
+        - [性质2](#性质2)
+        - [性质3](#性质3)
+        - [性质4](#性质4)
+        - [性质5](#性质5)
+        - [性质6](#性质6)
+        - [性质7](#性质7)
+  - [2. $\Omega$表示法与$\Theta$表示法](#2-math-xmlnshttpwwww3org1998mathmathmlsemanticsmrowmi-mathvariantnormalωmimrowannotation-encodingapplicationx-texomegaannotationsemanticsmathω表示法与math-xmlnshttpwwww3org1998mathmathmlsemanticsmrowmi-mathvariantnormalθmimrowannotation-encodingapplicationx-texthetaannotationsemanticsmathθ表示法)
+    - [定义2](#定义2)
+    - [定义3](#定义3)
+  - [3. 平均复杂度](#3-平均复杂度)
+
 ## 1. 大$O$表示法
 
 ### 定义1
@@ -29,7 +45,7 @@ $an^k=O(n^k)$
 - 令$c=N=1$，该性质成立
 
 > 结合性质2,3,4可以推出，任何多项式都是该多项式中次数最高的项的大O表示，即  
-> $$f(n)=a_kn^k+a_{k-1}n^{k-1}+...+a_1n+a_0=O(n^k)$$
+> $f(n)=a_kn^k+a_{k-1}n^{k-1}+...+a_1n+a_0=O(n^k)$
 
 ##### 性质5
 
@@ -58,4 +74,3 @@ $an^k=O(n^k)$
 ## 3. 平均复杂度
 
 $C_{avg}=\sum_ip(input_t)steps(input_i)$
-
