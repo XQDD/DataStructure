@@ -58,3 +58,4 @@ $an^k=O(n^k)$
 ## 3. 平均复杂度
 
 $C_{avg}=\sum_ip(input_t)steps(input_i)$
+
