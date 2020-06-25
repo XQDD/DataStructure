@@ -78,7 +78,7 @@ T *SkipList<T>::skipListSearch(const T &key)
                 curr = *(prev->next + (--lvl));
             }
         }
-        //当前节点值
+        //当前节点值小于目标值
         else
         {
             prev = curr;
@@ -107,4 +107,7 @@ T *SkipList<T>::skipListSearch(const T &key)
 template <typename T>
 void SkipList<T>::skipListInsert(const T &key)
 {
+    nodePtr curr[maxLevel], prev[maxLevel], newNode;
+    int lvl, i;
+    curr[maxLevel - 1] = root[maxLevel - 1];
 }
