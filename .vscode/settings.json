@@ -4,6 +4,9 @@
         "iterator": "cpp",
         "bitset": "cpp",
         "ostream": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "iostream": "cpp",
+        "iosfwd": "cpp",
+        "*.tcc": "cpp"
     }
 }
