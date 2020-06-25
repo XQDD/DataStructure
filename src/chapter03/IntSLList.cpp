@@ -37,7 +37,7 @@ void IntSLList::deleteNode(int el)
             IntSLLNode *pred, *temp;
             for (pred = head, temp = pred->next;
                  temp != nullptr;
-                 pred = pred->next, temp = temp->next)
+                 pred = pred->next, temp = pred->next)
             {
                 if (temp->info == el)
                 {

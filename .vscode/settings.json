@@ -7,6 +7,8 @@
         "valarray": "cpp",
         "iostream": "cpp",
         "iosfwd": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "cmath": "cpp",
+        "xtr1common": "cpp"
     }
 }

@@ -120,12 +120,9 @@ $\sum_{i=1}^ni^2=\frac{2n^3+3n^2+n}{6}{\le}\frac{2n^3+3n^2*n+n*n^2}{6}=cn^3=O(n^
 即$c_1{\le}1+\frac{log_2n}{n^{0.1}}{\le}c_2$ ①
 
 根据
-> $(log_ax)'=alnx$
-
-> $(x^a)'=ax^{a-1}$
-
-> 无穷比无穷型洛必达法则 $\lim_{x{\to}a}\frac{f(x)}{g(x)}=\lim_{x{\to}a}\frac{f'(x)}{g'(x)}$
-
+> $(log_ax)'=alnx$  
+> $(x^a)'=ax^{a-1}$  
+> 无穷比无穷型洛必达法则 $\lim_{x{\to}a}\frac{f(x)}{g(x)}=\lim_{x{\to}a}\frac{f'(x)}{g'(x)}$  
 > <https://baike.baidu.com/item/%E6%B4%9B%E5%BF%85%E8%BE%BE%E6%B3%95%E5%88%99/7646700?fr=aladdin>
 
 得$\frac{log_2n}{n^{0.1}}=\frac{0.1}{n^{0.1}ln2}$
@@ -230,11 +227,15 @@ $\frac{1+2+..+(n-2)}{4(n-2)}+\frac{n-1}{4}+\frac{n}{2}=\frac{7n-3}{8}$
 
 $a{\land}b$改写成这种$(a{\lor}b{\lor}c)\land(a{\lor}b{\lor\lnot}c)$类型
 
-$$a=
-(a{\lor}b{\lor}c{\lor}d)
+或
+
+$$
+a=
+(a{\lor}b{\lor}c)
 {\land}
-(a{\lor\lnot}b{\lor}c{\lor}d)
+(a{\lor\lnot}b{\lor}c)
 {\land}
-(a{\lor}b{\lor\lnot}c{\lor}d)
+(a{\lor}b{\lor\lnot}c)
 {\land}
-(a{\lor}b{\lor}c{\lor\lnot}d)$$
+(a{\lor\lnot}b{\lor\lnot}c)
+$$

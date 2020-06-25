@@ -1,10 +1,27 @@
 #include <iostream>
 #include <valarray>
+#include <cmath>
 #include <bitset>
 #include "../utils/main.cpp"
 #include "IntSLList.h"
 
 using namespace std;
+
+//3.4 静态跳跃链表指向
+void printSkipListPointer(int n)
+{
+
+    int maxK = floor(log2(n));
+
+    for (int k = 1; k <= maxK; k++)
+    {
+        for (int i = 1; i <= (floor(n / (pow(2, k - 1)))) - 1; i++)
+        {
+            cout << "i=" << i << ",k=" << k << " ";
+            cout << pow(2, k - 1) * i << "->" << pow(2, k - 1) * (i + 1) << endl;
+        }
+    }
+}
 
 int main()
 {
@@ -20,4 +37,6 @@ int main()
 
     l.deleteNode(4);
     l.printAll();
+
+    printSkipListPointer(30);
 }
