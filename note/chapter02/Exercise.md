@@ -120,12 +120,9 @@
 即<img src="/note/chapter02/tex/ad129aaf6f6072e43c7a01edb5fce209.svg?invert_in_darkmode&sanitize=true" align=middle width=117.64812839999999pt height=30.648287999999997pt/> ①
 
 根据
-> <img src="/note/chapter02/tex/2dabdd601d7b063471f5367cf91a8576.svg?invert_in_darkmode&sanitize=true" align=middle width=110.87856285pt height=24.7161288pt/>
-
-> <img src="/note/chapter02/tex/bfc748da80f21abed691271390ca5d1c.svg?invert_in_darkmode&sanitize=true" align=middle width=98.70331514999998pt height=26.76175259999998pt/>
-
-> 无穷比无穷型洛必达法则 <img src="/note/chapter02/tex/5e5948e59770c2bba5aae804609dc39b.svg?invert_in_darkmode&sanitize=true" align=middle width=191.30326874999997pt height=34.99908059999999pt/>
-
+> <img src="/note/chapter02/tex/2dabdd601d7b063471f5367cf91a8576.svg?invert_in_darkmode&sanitize=true" align=middle width=110.87856285pt height=24.7161288pt/>  
+> <img src="/note/chapter02/tex/bfc748da80f21abed691271390ca5d1c.svg?invert_in_darkmode&sanitize=true" align=middle width=98.70331514999998pt height=26.76175259999998pt/>  
+> 无穷比无穷型洛必达法则 <img src="/note/chapter02/tex/5e5948e59770c2bba5aae804609dc39b.svg?invert_in_darkmode&sanitize=true" align=middle width=191.30326874999997pt height=34.99908059999999pt/>  
 > <https://baike.baidu.com/item/%E6%B4%9B%E5%BF%85%E8%BE%BE%E6%B3%95%E5%88%99/7646700?fr=aladdin>
 
 得<img src="/note/chapter02/tex/8a1f8f0d9f9bee17e18ec38528cea1cc.svg?invert_in_darkmode&sanitize=true" align=middle width=100.33473614999998pt height=30.648287999999997pt/>
@@ -230,4 +227,6 @@ false，当<img src="/note/chapter02/tex/776a2eb33ee5f162e3a01dcc9183d312.svg?in
 
 <img src="/note/chapter02/tex/fdf103bfa954b4d7742fdd6ff4c0dd85.svg?invert_in_darkmode&sanitize=true" align=middle width=26.70288884999999pt height=22.831056599999986pt/>改写成这种<img src="/note/chapter02/tex/be9f33a3fa83896466d0581c7ae7fdd7.svg?invert_in_darkmode&sanitize=true" align=middle width=144.34576199999998pt height=24.65753399999998pt/>类型
 
-<p align="center"><img src="/note/chapter02/tex/5e1e5fb2bed3dcf3adeff3ac5392d920.svg?invert_in_darkmode&sanitize=true" align=middle width=404.66426714999994pt height=16.438356pt/></p>
+或
+
+<p align="center"><img src="/note/chapter02/tex/7f0d985d8d0d08beb1c4ca7a34d3cd80.svg?invert_in_darkmode&sanitize=true" align=middle width=337.56360165pt height=16.438356pt/></p>
