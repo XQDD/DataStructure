@@ -2,8 +2,10 @@
 #include <valarray>
 #include <cmath>
 #include <bitset>
+#include <ctime>
 #include "../utils/main.cpp"
 #include "IntSLList.h"
+#include "genSkipL.h"
 
 using namespace std;
 
@@ -25,6 +27,10 @@ void printSkipListPointer(int n)
 
 int main()
 {
+    //设置随机数种子
+    srand(time(nullptr));
+
+    //测试单向链表
     IntSLList l;
 
     l.addToTail(1);
@@ -33,10 +39,24 @@ int main()
     l.addToTail(4);
     l.addToTail(5);
 
-    l.printAll();
+    cout << l << endl;
 
     l.deleteNode(4);
-    l.printAll();
+    cout << l << endl;
 
-    printSkipListPointer(30);
+    //测试标准跳表层级
+    printSkipListPointer(10);
+
+    //跳表
+    SkipList<int> s;
+    s.skipListInsert(1);
+    s.skipListInsert(4);
+    s.skipListInsert(5);
+    s.skipListInsert(7);
+    s.skipListInsert(49);
+    s.skipListInsert(6);
+    s.skipListInsert(16);
+    s.skipListInsert(8);
+
+    auto n = s.skipListSearch(8);
 }

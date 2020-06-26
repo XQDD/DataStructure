@@ -53,7 +53,7 @@ void IntSLList::deleteNode(int el)
     }
 }
 
-void IntSLList::printAll()
+void IntSLList::printAll() const
 {
     auto temp = head;
     while (temp != nullptr)
@@ -61,5 +61,4 @@ void IntSLList::printAll()
         cout << temp->info << ", ";
         temp = temp->next;
     }
-    cout << endl;
 }

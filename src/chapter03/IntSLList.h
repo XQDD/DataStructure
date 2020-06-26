@@ -3,6 +3,8 @@
 /* -------------------------------------------------------------------------- */
 #pragma once
 
+#include "../utils/main.cpp"
+
 class IntSLLNode
 {
 public:
@@ -21,14 +23,13 @@ public:
     IntSLLNode *next;
 };
 
-class IntSLList
+class IntSLList : public Printable
 {
 public:
     IntSLList()
     {
         head = tail = nullptr;
     }
-
     int isEmpty()
     {
         return head == nullptr;
@@ -38,7 +39,7 @@ public:
 
     void deleteNode(int);
 
-    void printAll();
+    void printAll() const override;
 
 private:
     IntSLLNode *head, *tail;

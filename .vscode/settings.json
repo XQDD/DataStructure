@@ -1,14 +1,18 @@
 {
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
     "files.associations": {
-        "iterator": "cpp",
+        "random": "cpp",
         "bitset": "cpp",
-        "ostream": "cpp",
-        "valarray": "cpp",
-        "iostream": "cpp",
         "iosfwd": "cpp",
-        "*.tcc": "cpp",
-        "cmath": "cpp",
-        "xtr1common": "cpp"
+        "xstring": "cpp",
+        "iterator": "cpp",
+        "streambuf": "cpp",
+        "type_traits": "cpp",
+        "xiosbase": "cpp",
+        "xlocale": "cpp",
+        "xlocnum": "cpp",
+        "xmemory": "cpp",
+        "xtr1common": "cpp",
+        "xutility": "cpp"
     }
 }

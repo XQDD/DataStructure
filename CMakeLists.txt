@@ -10,4 +10,3 @@ file(GLOB SRC_DIR src/*)
 foreach (subdir ${SRC_DIR})
     add_subdirectory(${subdir})
 endforeach ()
-
