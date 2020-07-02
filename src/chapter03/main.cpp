@@ -10,23 +10,19 @@
 using namespace std;
 
 //3.4 静态跳跃链表指向
-void printSkipListPointer(int n)
-{
+void printSkipListPointer(int n) {
 
     int maxK = floor(log2(n));
 
-    for (int k = 1; k <= maxK; k++)
-    {
-        for (int i = 1; i <= (floor(n / (pow(2, k - 1)))) - 1; i++)
-        {
+    for (int k = 1; k <= maxK; k++) {
+        for (int i = 1; i <= (floor(n / (pow(2, k - 1)))) - 1; i++) {
             cout << "i=" << i << ",k=" << k << " ";
             cout << pow(2, k - 1) * i << "->" << pow(2, k - 1) * (i + 1) << endl;
         }
     }
 }
 
-int main()
-{
+int main() {
     //设置随机数种子
     srand(time(nullptr));
 
@@ -59,4 +55,8 @@ int main()
     s.skipListInsert(8);
 
     auto n = s.skipListSearch(8);
+    s.printAll();
+    cout << 1;
+
+
 }
