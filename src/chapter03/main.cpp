@@ -34,16 +34,25 @@ int main() {
     l.addToTail(3);
     l.addToTail(4);
     l.addToTail(5);
-
     cout << l << endl;
 
+
+    cout << "单向链表翻转方法A" << endl;
+    l.reverserByNewHead();
+    cout << l << endl;
+    cout << "单向链表翻转方法B" << endl;
+    l.reverserInPlace();
+    cout << l << endl;
+    cout << "单向链表删除" << endl;
     l.deleteNode(4);
     cout << l << endl;
 
+    cout << "======================" << endl;
+
+    cout << "跳表" << endl;
     cout << "测试标准跳表层级" << endl;
     printSkipListPointer(10);
 
-    cout << "跳表" << endl;
     SkipList<int> s;
     cout << "跳表插入" << endl;
     s.skipListInsert(1);
@@ -63,3 +72,4 @@ int main() {
 
 
 }
+

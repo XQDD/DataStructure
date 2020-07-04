@@ -209,6 +209,7 @@ void SkipList<T>::printAll() const {
 
     auto node = root;
     for (int i = 0; i < len; i++) {
+        //当前节点值
         auto level1 = *(node);
         for (int j = 0; j < maxLevel; j++) {
             // node 为数组地址，数组地址+1等于当前地址加上数据类型长度，解引用则获取其中存储的值
@@ -221,6 +222,7 @@ void SkipList<T>::printAll() const {
                 for (int k = j; k < maxLevel; k++) {
                     auto currK = root[k];
                     while (currK != nullptr) {
+                        //低效率一层层一个个遍历比对是否为当前值
                         if (currK == level1) {
                             cout << currK->key << " ";
                             break;

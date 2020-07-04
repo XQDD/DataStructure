@@ -37,6 +37,13 @@ public:
 
     void addToTail(int);
 
+    //3.10 P113 单链表翻转
+    //通过头节点构建新链表翻转法
+    void reverserByNewHead();
+    //就地翻转法
+    void reverserInPlace();
+
+
     void deleteNode(int);
 
     void printAll() const override;
