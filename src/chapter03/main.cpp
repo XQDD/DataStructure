@@ -9,7 +9,7 @@
 
 using namespace std;
 
-//3.4 é™æ€è·³è·ƒé“¾è¡¨æŒ‡å‘
+//3.4 ¾²Ì¬ÌøÔ¾Á´±íÖ¸Ïò
 void printSkipListPointer(int n) {
 
     int maxK = floor(log2(n));
@@ -23,10 +23,10 @@ void printSkipListPointer(int n) {
 }
 
 int main() {
-    //è®¾ç½®éšæœºæ•°ç§å­
+    //ÉèÖÃËæ»úÊıÖÖ×Ó£¬²»È»Î±Ëæ»úÃ¿´ÎËæ»ú³öÀ´µÄÊı¶¼ÊÇÒ»ÑùµÄ
     srand(time(nullptr));
 
-    //æµ‹è¯•å•å‘é“¾è¡¨
+    cout << "²âÊÔµ¥ÏòÁ´±í" << endl;
     IntSLList l;
 
     l.addToTail(1);
@@ -40,23 +40,26 @@ int main() {
     l.deleteNode(4);
     cout << l << endl;
 
-    //æµ‹è¯•æ ‡å‡†è·³è¡¨å±‚çº§
+    cout << "²âÊÔ±ê×¼Ìø±í²ã¼¶" << endl;
     printSkipListPointer(10);
 
-    //è·³è¡¨
+    cout << "Ìø±í" << endl;
     SkipList<int> s;
+    cout << "Ìø±í²åÈë" << endl;
     s.skipListInsert(1);
-    s.skipListInsert(4);
-    s.skipListInsert(5);
-    s.skipListInsert(7);
-    s.skipListInsert(49);
-    s.skipListInsert(6);
-    s.skipListInsert(16);
+    s.skipListInsert(2);
     s.skipListInsert(8);
+    s.skipListInsert(9);
+    s.skipListInsert(3);
+    s.skipListInsert(5);
+    s.skipListInsert(4);
+    s.skipListInsert(0);
+    s.skipListInsert(6);
+    s.skipListInsert(7);
+    cout << endl;
 
-    auto n = s.skipListSearch(8);
-    s.printAll();
-    cout << 1;
+    cout << "Ìø±í½á¹¹" << endl;
+    cout << s;
 
 
 }

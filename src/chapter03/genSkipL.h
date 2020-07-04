@@ -12,7 +12,7 @@ template<typename T>
 class SkipListNode {
 public:
     T key;               //存储的数值
-    SkipListNode **next; //指针数组，顺序存储当前层级所有节点
+    SkipListNode *next[maxLevel] = {}; //指针数组，顺序存储当前层级所有节点
 };
 
 template<typename T>
@@ -168,10 +168,11 @@ void SkipList<T>::skipListInsert(const T &key) {
 
     //随机生成当前节点的层级
     lvl = chooseLevel();
+    cout << "(" << key << "," << lvl + 1 << ") ";
     int i;
     //新节点
     nodePtr newNode = new SkipListNode<T>();
-    newNode->next = new nodePtr[sizeof(nodePtr) * (lvl + 1)];
+//    newNode->next = new nodePtr[sizeof(nodePtr) * (lvl + 1)];
     newNode->key = key;
     //将新节点置于每层遍历好的前驱与后继之间
     for (i = 0; i <= lvl; i++) {
@@ -186,7 +187,7 @@ void SkipList<T>::skipListInsert(const T &key) {
 
 template<typename T>
 int SkipList<T>::length() const {
-    int len = 0;
+    int len = 1;
 
     if (!isEmpty()) {
         auto temp = root[0];
@@ -206,17 +207,31 @@ void SkipList<T>::printAll() const {
         return;
     }
 
-    auto *node = root[0];
+    auto node = root;
     for (int i = 0; i < len; i++) {
-        if (node) {
-            for (int j = 0; j < maxLevel; j++) {
-                auto curr = node + j;
-                if (curr != nullptr) {
+        auto level1 = *(node);
+        for (int j = 0; j < maxLevel; j++) {
+            // node 为数组地址，数组地址+1等于当前地址加上数据类型长度，解引用则获取其中存储的值
+            auto curr = *(node + j);
+            if (curr != nullptr) {
+                if (curr == level1) {
                     cout << curr->key << " ";
                 }
+            } else if (i != 0) {
+                for (int k = j; k < maxLevel; k++) {
+                    auto currK = root[k];
+                    while (currK != nullptr) {
+                        if (currK == level1) {
+                            cout << currK->key << " ";
+                            break;
+                        }
+                        currK = currK->next[k];
+                    }
+                }
+                break;
             }
-            node = *(node[0].next);
         }
+        node = node[0]->next;
         cout << endl;
     }
 
