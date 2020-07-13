@@ -46,7 +46,7 @@ public:
 
     void deleteNode(int);
 
-    void printAll() const override;
+    void print() const override;
 
 private:
     IntSLLNode *head, *tail;

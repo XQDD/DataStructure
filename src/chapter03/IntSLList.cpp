@@ -39,7 +39,7 @@ void IntSLList::deleteNode(int el) {
     }
 }
 
-void IntSLList::printAll() const {
+void IntSLList::print() const {
     auto temp = head;
     while (temp != nullptr) {
         cout << temp->info << ", ";

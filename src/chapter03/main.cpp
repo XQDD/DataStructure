@@ -2,7 +2,6 @@
 #include <valarray>
 #include <cmath>
 #include <bitset>
-#include <ctime>
 #include "../utils/main.cpp"
 #include "IntSLList.h"
 #include "genSkipL.h"
@@ -23,8 +22,7 @@ void printSkipListPointer(int n) {
 }
 
 int main() {
-    //设置随机数种子，不然伪随机每次随机出来的数都是一样的
-    srand(time(nullptr));
+    init();
 
     cout << "测试单向链表" << endl;
     IntSLList l;

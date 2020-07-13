@@ -35,7 +35,7 @@ public:
     int length() const;
 
 
-    void printAll() const override;
+    void print() const override;
 
 private:
     typedef SkipListNode<T> *nodePtr;
@@ -200,7 +200,7 @@ int SkipList<T>::length() const {
 
 
 template<typename T>
-void SkipList<T>::printAll() const {
+void SkipList<T>::print() const {
     int len = length();
 
     if (len == 0) {
