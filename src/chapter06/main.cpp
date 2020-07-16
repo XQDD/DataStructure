@@ -4,6 +4,7 @@
 #include "../utils/main.cpp"
 #include "genBST.h"
 #include "printableTree.h"
+#include "genThreaded.h"
 
 using namespace std;
 
@@ -17,15 +18,40 @@ int main() {
     bst.insert(3);
     bst.insert(1);
     bst.insert(9);
-    cout << endl << "¶ş²æÊ÷½á¹¹" << endl;
-    PrintableTree print(&bst);
+    println("äºŒå‰æ ‘ç»“æ„");
+    PrintableTree<int> print(&bst);
+    println("åˆå¹¶åˆ é™¤");
+    bst.findAndDeleteByMerging(6);
+    print = PrintableTree<int>(&bst);
 
-    cout << endl << "ÏÈĞò±éÀú" << endl;
+
+    println("é€’å½’");
+    println("å…ˆåºéå†");
     bst.preOrder(bst.root);
-    cout << endl << "ÖĞĞò±éÀú" << endl;
+    println("ä¸­åºéå†");
     bst.inOrder(bst.root);
-    cout << endl << "ºóĞò±éÀú" << endl;
+    println("ååºéå†");
     bst.postOrder(bst.root);
 
+    println("å¾ªç¯");
+    println("å…ˆåºéå†");
+    bst.iterativePreOrder();
+    println("ååºéå†");
+    bst.iterativePostOrder();
+    println("morrisä¸­åºéå†");
+    bst.morrisInOrder();
+
+    println("çº¿ç´¢æ ‘");
+    ThreadedTree<int> threadedTree;
+    threadedTree.insert(1);
+    threadedTree.insert(3);
+    threadedTree.insert(2);
+    threadedTree.insert(4);
+    print = PrintableTree<int>(&threadedTree, [](const BSTNode<int> *from, bool isLeft) {
+        auto *t = (const ThreadedNode<int> *) from;
+        return (BSTNode<int> *) (from ? (isLeft ? t->left : t->successor ? nullptr : t->right) : nullptr);
+    });
+    println("ä¸­åºéå†");
+    threadedTree.inOrder();
 
 }

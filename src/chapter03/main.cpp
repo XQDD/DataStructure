@@ -8,7 +8,7 @@
 
 using namespace std;
 
-//3.4 ¾²Ì¬ÌøÔ¾Á´±íÖ¸Ïò
+//3.4 é™æ€è·³è·ƒé“¾è¡¨æŒ‡å‘
 void printSkipListPointer(int n) {
 
     int maxK = floor(log2(n));
@@ -24,7 +24,7 @@ void printSkipListPointer(int n) {
 int main() {
     init();
 
-    cout << "²âÊÔµ¥ÏòÁ´±í" << endl;
+    cout << "æµ‹è¯•å•å‘é“¾è¡¨" << endl;
     IntSLList l;
 
     l.addToTail(1);
@@ -35,24 +35,24 @@ int main() {
     cout << l << endl;
 
 
-    cout << "µ¥ÏòÁ´±í·­×ª·½·¨A" << endl;
+    cout << "å•å‘é“¾è¡¨ç¿»è½¬æ–¹æ³•A" << endl;
     l.reverserByNewHead();
     cout << l << endl;
-    cout << "µ¥ÏòÁ´±í·­×ª·½·¨B" << endl;
+    cout << "å•å‘é“¾è¡¨ç¿»è½¬æ–¹æ³•B" << endl;
     l.reverserInPlace();
     cout << l << endl;
-    cout << "µ¥ÏòÁ´±íÉ¾³ı" << endl;
+    cout << "å•å‘é“¾è¡¨åˆ é™¤" << endl;
     l.deleteNode(4);
     cout << l << endl;
 
     cout << "======================" << endl;
 
-    cout << "Ìø±í" << endl;
-    cout << "²âÊÔ±ê×¼Ìø±í²ã¼¶" << endl;
+    cout << "è·³è¡¨" << endl;
+    cout << "æµ‹è¯•æ ‡å‡†è·³è¡¨å±‚çº§" << endl;
     printSkipListPointer(10);
 
     SkipList<int> s;
-    cout << "Ìø±í²åÈë" << endl;
+    cout << "è·³è¡¨æ’å…¥" << endl;
     s.skipListInsert(1);
     s.skipListInsert(2);
     s.skipListInsert(8);
@@ -65,7 +65,7 @@ int main() {
     s.skipListInsert(7);
     cout << endl;
 
-    cout << "Ìø±í½á¹¹" << endl;
+    cout << "è·³è¡¨ç»“æ„" << endl;
     cout << s;
 
 

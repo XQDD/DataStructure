@@ -47,5 +47,8 @@ public:
 void init() {
     //设置随机数种子，不然伪随机每次随机出来的数都是一样的
     srand(time(nullptr));
+}
 
+void println(string str) {
+    cout << endl << str << endl;
 }
